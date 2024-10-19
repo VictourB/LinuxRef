@@ -5,19 +5,18 @@
 
 **Add User**
 
-    sudo useradd *options username*
+`sudo useradd *options username*`
     
-    sudo passwd *username*
+`sudo passwd *username*`
 
 
-```
-Options:
--m (--create-home)  -G (--groups)
--d (--home)         -s (--shell)
--u (--uid)          -c (--comment)
--g (--gid)          -e (--expiredate) YYYY-MM-DD
--r (--system)       -D (--defaults)
-```
+Options:  
+-m (--create-home)  -G (--groups)  
+-d (--home)         -s (--shell)  
+-u (--uid)          -c (--comment)  
+-g (--gid)          -e (--expiredate) YYYY-MM-DD  
+-r (--system)       -D (--defaults)  
+
 
 Defaults: */etc/default/useradd*
 
