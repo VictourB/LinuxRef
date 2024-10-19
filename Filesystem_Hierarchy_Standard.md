@@ -49,3 +49,13 @@
 | /var/spool | Spool for tasks waiting to be processed (e.g., print queues and outgoing mail queue). |
 | /var/spool/mail | Deprecated location for users' mailboxes. |
 | /var/tmp | Temporary files to be preserved between reboots. |
+
+## Other Locations
+
+-   /var/lib/pacman
+-   /etc/passwd
+-   /etc/shadow
+-   /etc/group
+-   /etc/skel
+-   ~/.bash_profile
+-   ~/.bashrc
