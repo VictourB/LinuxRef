@@ -31,9 +31,9 @@ Search for Packages
 
 **Add User**
 
-> sudo useradd *options username* 
->
-> sudo passwd *username*
+    sudo useradd *options username*
+    
+    sudo passwd *username*
 
     Options:
     -m (--create-home)  -G (--groups)
