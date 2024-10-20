@@ -5,51 +5,52 @@
 
 **Add User**
 
-`sudo useradd *options username*`
-    
-`sudo passwd *username*`
-
-
-Options:  
--m (--create-home)  -G (--groups)  
--d (--home)         -s (--shell)  
--u (--uid)          -c (--comment)  
--g (--gid)          -e (--expiredate) YYYY-MM-DD  
--r (--system)       -D (--defaults)  
+    sudo useradd options username
+    sudo passwd username  
+  
+| Options: |  |
+|--------------------|----------------------------------|
+| -m (--create-home) | -G (--groups)                    |
+| -d (--home)        | -s (--shell)                     |
+| -u (--uid)         | -c (--comment)                   |
+| -g (--gid)         | -e (--expiredate) YYYY-MM-DD     |
+| -r (--system)      | -D (--defaults)                  |
 
 
 Defaults: */etc/default/useradd*
 
-Example:
-
-> $ sudo useradd -m -d "/home/newuser" -s "/bin/bash" -c "newaccount" newuser
->
-> $ sudo passwd
+*Example:  
+sudo useradd -m -d "/home/newuser" -s "/bin/bash" -c "newaccount" newuser  
+sudo passwd*  
 
 **Remove User**
 
     sudo userdel *options username*
 
-Options:
--r (--remove)   Also remove home and spool
+| Options: |
+|----------|
+| -r (--remove)   Also remove home and spool |
 
 **Create Group**
 
     sudo groupadd options *groupname*
 
-Options:
--f (--force)
--g (--gid)
--r (--system)
--p (--password)
--n (--new-name)
+| Options: |
+|----------------|
+|-f (--force)    |
+|-g (--gid)      |
+|-r (--system)   |
+|-p (--password) |
+|-n (--new-name) |
     
 **Add User to Group**
 
     sudo usermod *options groupname username*
 
-Options:
--a (--append)   -G (--groups)
+| Options: |
+|----------|
+| -a (--append) |
+| -G (--groups) |
     
 **Remove User from Group**
 
